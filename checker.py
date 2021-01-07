@@ -12,3 +12,4 @@ while True:
 	if date != check:
 		check = date
 		requests.get('https://api.telegram.org/bot'+ token + '/sendMessage?chat_id=CHATID&text=' + 'LAST ACTIVITY:\n' + check)
+	time.sleep(300)
